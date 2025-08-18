@@ -1,0 +1,108 @@
+:root {
+    --primary: #ff6600;
+    --secondary: #333;
+    --light: #fff;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--secondary);
+  }
+  header, footer {
+    background: var(--primary);
+    color: var(--light);
+    padding: 1rem;
+  }
+  nav a {
+    color: var(--light);
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--light);
+    margin: 0.5rem 0;
+  }
+  
+  :root {
+    --primary: #ff6600;
+    --secondary: #333;
+    --light: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--secondary);
+  }
+  
+  header {
+    background: var(--primary);
+    color: var(--light);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  nav a {
+    color: var(--light);
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('/images/home-bg.png');
+    background-size: cover;
+    background-position: center;
+    /* color: var(--light); */
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Cards */
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: var(--light);
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 1rem;
+  }
+  .card-content h3 {
+    margin: 0 0 0.5rem;
+  }
+  
