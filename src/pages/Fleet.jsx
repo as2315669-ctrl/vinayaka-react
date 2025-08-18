@@ -1,25 +1,28 @@
 import React from "react";
 import "../styles.css";
-
+import tempoTraveller from '../images/tempo-traveller.jpeg';
+import urbania from '../images/force-urbania.jpg';
+import sedan from '../images/sedan.jpeg';
+import suv from '../images/suv.jpeg';
 const fleetData = [
   {
     name: "Force Urbania",
-    img: "/images/force-urbania.jpg",
+    img: urbania,
     description: "Spacious, comfortable, and ideal for long journeys with family or groups.",
   },
   {
     name: "Tempo Traveller",
-    img: "/images/tempo-traveller.jpeg",
+    img: tempoTraveller,
     description: "Perfect for medium-sized groups, offering great comfort and space.",
   },
   {
     name: "Sedan Car",
-    img: "/images/sedan.jpeg",
+    img: sedan,
     description: "Smooth rides for small groups or personal travel.",
   },
   {
     name: "SUV",
-    img: "/images/suv.jpeg",
+    img: suv,
     description: "Powerful and comfortable for hilly terrains and adventurous trips.",
   },
 ];
