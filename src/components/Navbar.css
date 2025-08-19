@@ -32,6 +32,17 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+
+  .navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
   
   /* Mobile Styles */
   @media (max-width: 768px) {

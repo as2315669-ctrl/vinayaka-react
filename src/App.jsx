@@ -14,10 +14,10 @@ import "./App.css";
 export default function App() {
   return (
     <div>
-      <header>
-  <div className="logo">✈ Vinayaka Tour & Travels</div>
+      {/* <header> */}
+  {/* <div className="logo">✈ Vinayaka Tour & Travels</div> */}
   <Navbar />
-</header>
+{/* </header> */}
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />

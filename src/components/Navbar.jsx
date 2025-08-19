@@ -8,10 +8,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* <div className="navbar-logo">
-        <span className="logo-icon">✈️</span>
-        Vinayaka Tour & Travels
-      </div> */}
+      {/* ✅ Logo links to Home */}
+      <div className="navbar-logo">
+        <Link to="/" onClick={() => setIsOpen(false)}>
+        <div className="logo">✈ Vinayaka Tour & Travels</div>
+        </Link>
+      </div>
 
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
