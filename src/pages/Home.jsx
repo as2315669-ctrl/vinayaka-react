@@ -63,12 +63,12 @@ export default function Home() {
           Let Vinayaka Tour & Travels take care of your travel needs. Contact us for customized packages, 
           group bookings, and spiritual tours across Uttar Pradesh and beyond.
         </p>
-        <a
+        {/* <a
           href="/contact"
           className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-orange-600"
         >
           Contact Us
-        </a>
+        </a> */}
       </div>
     </div>
   );
