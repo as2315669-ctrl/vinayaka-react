@@ -8,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Navbar from "./components/Navbar";
+import WhatsAppButton from "./components/WhatsAppButton";
 import "./App.css";
 
 
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <WhatsAppButton />
       </div>
       <Footer />
     </div>
