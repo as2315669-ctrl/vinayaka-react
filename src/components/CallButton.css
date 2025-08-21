@@ -1,0 +1,42 @@
+.call-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .call-float a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #34b7f1; /* phone-blue */
+    border-radius: 50px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .call-float img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  
+  .call-text {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 0;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  
+  .call-float a:hover .call-text {
+    margin-left: 10px;
+    max-width: 200px;
+    opacity: 1;
+  }
+  

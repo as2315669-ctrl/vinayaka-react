@@ -11,13 +11,15 @@
   text-decoration: none;
   background: #25d366;
   border-radius: 50px;
-  padding: 10px 15px;
+  padding: 10px;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .whatsapp-float img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
 }
 
 /* hidden by default */
@@ -25,14 +27,17 @@
   color: white;
   font-weight: bold;
   font-size: 14px;
-  margin-right: 8px;
+  margin-right: 0;
+  max-width: 0;
   opacity: 0;
+  overflow: hidden;
   white-space: nowrap;
-  transition: opacity 0.3s ease, margin 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* show text on hover */
 .whatsapp-float a:hover .whatsapp-text {
+  margin-right: 10px;
+  max-width: 200px;
   opacity: 1;
-  margin-right: 8px;
 }
