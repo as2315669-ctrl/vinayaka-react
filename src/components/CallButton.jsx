@@ -25,7 +25,7 @@ export default function CallButton() {
   const phoneNumber = "tel:+918604563567"; // your number
 
   return (
-    <a href={phoneNumber} className="call-float">
+    <a href={phoneNumber} className="floating-btn call-float">
       <img src={call} alt="Call" />
     </a>
   );

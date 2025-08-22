@@ -78,6 +78,40 @@ body {
     border-radius: 8px;
     margin-bottom: 1rem;
   }
+
+  /* Shared Floating Button Styles */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f9f9f9; /* default WhatsApp green */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* .floating-btn img {
+  width: 30px;
+  height: 30px;
+} */
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+/* WhatsApp on right */
+.whatsapp-float {
+  right: 20px;
+}
+
+/* Call on left */
+.call-float {
+  left: 20px;
+}
   
   /* Responsive */
   @media (max-width: 768px) {

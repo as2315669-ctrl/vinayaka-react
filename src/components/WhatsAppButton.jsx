@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-float">
+    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="floating-btn whatsapp-float">
       <img src={whatsapp} alt="WhatsApp" />
     </a>
   );
