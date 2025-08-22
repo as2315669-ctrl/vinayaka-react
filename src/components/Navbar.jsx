@@ -1,17 +1,37 @@
 // src/components/Navbar.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // ✅ Close when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={menuRef}>
       {/* ✅ Logo links to Home */}
       <div className="navbar-logo">
         <Link to="/" onClick={() => setIsOpen(false)}>
-        <div className="logo">✈ Vinayaka Tour & Travels</div>
+          <div className="logo">✈ Vinayaka Tour & Travels</div>
         </Link>
       </div>
 
